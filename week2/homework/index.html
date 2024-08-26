@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/256/1581/1581594.png" type="image/png">
+    <title>Опросник для владельцев животных</title>
+</head>
+
+<body style="font-family: cursive" bgcolor="#CCFFFF">
+    <h1>Четвероногий друг, пернатый компаньон или экзотический питомец? Поделитесь своей историей!</h1>
+    <form method="post">
+        <label for="pet-name">Кличка животного</label>
+        <input type="text" id="pet-name" name="pet-name" />
+        <br />
+
+        <label for="pet-type">Вид животного</label>
+        <select id="pet-type" name="pet-type">
+            <option value="">Выберите</option>
+            <option value="dog">Собака</option>
+            <option value="cat">Кошка</option>
+            <option value="bird">Птица</option>
+            <option value="reptile">Пресмыкающееся</option>
+            <option value="fish">Рыба</option>
+            <option value="other">Другое</option>
+        </select>
+        <br />
+
+        <label>Пол:</label>
+        <label for="gender-female">Женский</label>
+        <input type="radio" id="gender-female" name="pet-gender" />
+        <label for="gender-male">Мужской</label>
+        <input type="radio" id="gender-male" name="pet-gender" />
+        <br />
+
+        <label>Способ питания:</label> <br>
+        <input type="checkbox" name="eat" value="1" />
+        Мясо <br />
+        <input type="checkbox" name="eat" value="2" />
+        Корм <br />
+        <input type="checkbox" name="eat" value="3" />
+        Растения <br />
+        <input type="checkbox" name="eat" value="4" />
+        Рыба <br />
+        <input type="checkbox" name="eat" value="5" />
+        Насекомые <br>
+        <input type="checkbox" name="eat" value="6" />
+        Другие <br />
+
+        <label for="name">Имя владельца</label>
+        <input type="text" id="name" name="ownername" />
+        <br>
+
+        <label for="email">Адрес электронной почты</label>
+        <input type="text" id="email" name="email" />
+        <br/> <br/>
+
+        <textarea name="opinion" placeholder="Комментарии" cols="60" rows="10"></textarea>
+        <br/> 
+        <label for="photo">Прикрепите фотографию питомца</label> <br/>
+        <input type="file" id="photo" name="photo"/> <br/> <br/>
+        <button style="color: rgb(7, 5, 148); background-color: rgb(219, 136, 178);" type="submit">Сохранить</button>
+    </form>
+    <img src="https://cdn-icons-png.flaticon.com/256/15133/15133076.png" alt="Pets" style="position: relative; left: 1500px;">
+</body>
+</html>
